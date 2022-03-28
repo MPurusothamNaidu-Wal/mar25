@@ -74,7 +74,7 @@ const Category = () => {
     <div>
       {edit ? (
         <div>
-          <h1>Update Category</h1>
+          <h1 className='h1 mx-auto'>Update Category</h1>
           <form className='todo' onSubmit={saveCategory}>
             <h3>Category Name : </h3>
             <input type='text' name='name' placeholder='Enter Category Name' />

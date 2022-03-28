@@ -101,7 +101,7 @@ const Dishes = () => {
             <h3 className='subHeading'>Description : </h3>
             <textarea name='description' />
             <br />
-            <b>Select Category : </b>
+            <h3>Select Category : </h3>
             <select name='cid'>
               <option selected>Select</option>
               {category.map((val) => {
@@ -110,7 +110,7 @@ const Dishes = () => {
             </select>
             <br />
             <button className='btn btn-outline-primary'>
-              <b>Update Dish</b>
+              <h3>Update Dish</h3>
             </button>
             <br />
           </form>

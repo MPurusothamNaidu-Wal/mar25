@@ -19,7 +19,7 @@ function App() {
   const value = { state, dispatch };
   return (
     <div className='App'>
-      <nav
+      {/* <nav
         className='navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light'
         id='ftco-navbar'
       >
@@ -52,15 +52,19 @@ function App() {
             </ul>
           </div>
         </div>
-      </nav>
-      <BrowserRouter>
+      </nav> */}
+      <CityCookie />
+      <DetailCookie />
+      <Dishes />
+      <Category />
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/city' element={<CityCookie />} />
           <Route path='/detail' element={<DetailCookie />} />
           <Route path='/category' element={<Category />} />
           <Route path='/dishes' element={<Dishes />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>  */}
       {/* <ProductContext.Provider value={value}>
                 <ProductForm />
                 <ProductList />
