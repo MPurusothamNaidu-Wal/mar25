@@ -43,6 +43,7 @@ var AuthorRouter = require('./routes/author');
 var TodosRoutter = require('./routes/todo');
 var CookieRouter = require('./routes/cookie');
 
+var dishesRouter = require('./routes/dishes');
 var CityCookieRouter = require('./routes/citycookie');
 var DetailCookitRouter = require('./routes/detailcookie');
 var app = express();
@@ -57,6 +58,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/dishes', dishesRouter);
 app.use('/detailcookie', DetailCookitRouter);
 app.use('/cookie', CookieRouter);
 app.use('/citycookie', CityCookieRouter);
